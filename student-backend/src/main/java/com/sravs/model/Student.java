@@ -10,9 +10,9 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String  firstname;
+    private String firstname;
     private String lastname;
-    private  String email;
+    private String email;
     private String address;
 
     public Student() {
@@ -53,7 +53,6 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
-
 
 
     public String getAddress() {

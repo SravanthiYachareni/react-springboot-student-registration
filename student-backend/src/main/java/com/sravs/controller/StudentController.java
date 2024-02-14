@@ -13,14 +13,16 @@ import java.util.List;
 public class StudentController {
     @Autowired
     StudentServiceImpl studentService;
-@PostMapping("add")
-    public String add(@RequestBody Student student){
+
+    @PostMapping("add")
+    public String add(@RequestBody Student student) {
         studentService.saveStudent(student);
         return "New Student Added";
     }
+
     @GetMapping("getAll")
-    public List<Student> getStudent(){
-     return  studentService.getStudent();
+    public List<Student> getStudent() {
+        return studentService.getStudent();
 
     }
 

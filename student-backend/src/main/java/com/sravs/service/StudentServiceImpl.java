@@ -8,13 +8,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public class StudentServiceImpl implements StudentService {
 
     @Autowired
     StudentRepo studentRepo;
+
     @Override
     public Student saveStudent(Student student) {
-        return  studentRepo.save(student);
+        return studentRepo.save(student);
     }
 
     @Override
